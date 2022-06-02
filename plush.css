@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bim{
+    padding: 20px;
+    background: black;
+}
+.md h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    color: aliceblue;
+}
+.md .row{
+    display: flex;
+   
+}
+.md .col{
+  
+    flex-basis: 50%;
+}
+.md .col img{
+    border-radius: 90px;
+    margin-left: 145px;
+}
+.md .col h1{
+    text-align: center;
+    color: rgb(233, 213, 213);
+    margin-top: 10px;
+    margin-right: 45px;
+}
+.md .col p{
+    color: rgb(124, 117, 117);
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin-right: 40px;
+}
+.md h4{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.md h3{
+    margin-right: 40px;
+    color: orangered;
+    text-align: center;
+    margin-top: 75px;
+
+}

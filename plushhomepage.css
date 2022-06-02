@@ -1,0 +1,964 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background: rgb(20, 230, 212);
+    width: 100%;
+   
+  
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+}
+.container{
+    background: blue;
+}
+.row{
+    background: transparent;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav a li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(104, 94, 94);
+    transition: 5ms;
+}
+nav a li:hover{
+    color: orangered;
+    transform: translateX(-5px);
+}
+nav a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    border-radius: 50%;
+   
+}
+.logo p{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    background: rgb(27, 26, 26);
+}
+.col{
+    flex-basis: 50%;
+    margin-top: 10px;
+    padding: 20px;
+}
+.col h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 120px;
+    color: white;
+    
+}
+.col h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: white;
+}
+.col h3{
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: 100;
+    color: #707070;
+}
+.col button{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 55px;
+    border-radius: 30px;
+    width: 200px;
+    background: white;
+    color: black;
+    border: 1px white solid;
+    cursor: pointer;
+    transition: 5ms;
+}
+.col button:hover{
+    color: orangered;
+    transform: translateX(-5px);
+}
+.container .row::after{
+    content: "";
+    width: 10px;
+    height: 30%;
+    position: absolute;
+    background: yellow;
+    left: 30px;
+    top: 230px;
+    margin-right: 20px;
+    /* z-index: -1; */
+    /* position: sticky; */
+    
+}
+.mid h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.mid h1::after{
+    content: "";
+    height: 6px;
+    width: 110px;
+    position: absolute;
+    background: orangered;
+    /* left: 80px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 46%;
+
+}
+.mid .row{
+    display: flex;
+    background: white;
+    justify-content: center;
+}
+.mid .row .col{
+    flex-basis: 30%;
+}
+.mid .row .col img{
+    border-radius: 50%;
+}
+
+.flash .after h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.flash .col{
+    flex-basis: 50%;
+   
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.flash .row{
+    display: flex;
+    margin-top: 20px;
+    /* background: linear-gradient(to right,white, orangered); */
+    background: teal;
+}
+.flash .row .col h2{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 42px;
+    font-weight: bolder;
+}
+.flash .row .col p{
+    text-align: center;
+    color: black;
+}
+.flash .row h1{
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+.flash .row .col h3{
+    /* color: #707070; */
+    color: white;
+    text-align: center;
+    /* display: flex; */
+    font-size: 35px;
+    
+}
+.flash .col p{
+    font-size: 28px;
+    margin-top: 35px;
+    color: #707070;
+}
+.flash .row .col img{
+    border-radius: 50%;
+}
+.flash .row .col h3::after{
+    content: "";
+    width: 130px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    margin-top: -19px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 235px;
+    /* align-content: center; */
+
+}
+.flash .after h1::after{
+    content: "";
+    background: teal;
+    width: 120px;
+    height: 7px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 46%;
+}
+.footer h1{
+    text-align: center;
+}
+.footer .row{
+    display: flex;
+    padding: 10px;
+    
+}
+.footer .row .col{
+  
+    border: 1px red ;
+}
+.footer .row .col img{
+    margin-left: 20px;
+}
+.col .image img{
+    border-radius: 20px;
+}
+.footer .row .col h4{
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.footer .row .col p{
+    color: #707070;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+.push{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.useful{
+    margin-left: 10px;
+}
+.push h1{
+    margin-top: 15px;
+}
+.push img{
+
+}
+.social{
+    /* background: black; */
+    margin-top: 1px;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+    gap: 10px;
+    background:  #707070;
+}
+.social i{
+    margin-right: 15px;
+}
+.social i:hover{
+    color: antiquewhite;
+}
+
+
+/* Plush Product Page */
+.welcome h1{
+    color: rgb(46, 41, 41);
+    font-size: 100px;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+.welcome h2{
+   margin-top: 0px;
+    color: rgb(46, 41, 41);
+    margin-left: 60px;
+    font-size: 50px;
+}
+.welcome .row{
+    background: wheat;
+}
+.welcome p{
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 100;
+    /* color: #707070; */
+    color: orangered;
+}
+.welcome .row::after{
+    content: "";
+    width: 10px;
+    height: 26%;
+    position: absolute;
+    background: orangered;
+    left: 55px;
+    top: 230px;
+    margin-right: 20px;
+    /* z-index: -1; */
+    /* position: sticky; */
+    
+}
+.cloth h1{
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.cloth h1::after{
+    content: "";
+    height: 8px;
+    width: 120px;
+    background: orangered;
+    position: absolute;
+    display: flex;
+    margin-left: 46%;
+}
+.cloth .row{
+    display: flex;
+}
+.cloth .col{
+    align-content: center;
+    justify-content: center;
+}
+.cloth img{
+    border-radius: 50%;
+}
+.cloth i{
+    color: orangered;
+    font-size: 18px;
+}
+.cloth p{
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.cloth .rating{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.bags .rating{
+    margin-top: 10px;
+}
+.bags h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.bags h1::after{
+    content: "";
+    height: 8px;
+    width: 120px;
+    background: orangered;
+    position: absolute;
+    display: flex;
+    margin-left: 46%;
+}
+.bags .row{
+    display: flex;
+}
+.bags .row .col {
+    margin-left: 55px;
+}
+.cloth .row .col{
+    margin-left: 55px;
+}
+.bags img{
+    border-radius: 40px;
+}
+.bags i{
+    color: orangered;
+    font-size: 18px;
+}
+.bags p{
+    color: white;
+}
+.bags p{
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+    
+}
+.line a button{
+    background: orangered;
+    color: white;
+    width: 100px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 60px;
+    padding: 2px;
+
+  
+}
+.line a button:hover{
+    background: teal;
+}
+.bags a button{
+    background: orangered;
+    color: white;
+    width: 100px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 2px;
+}
+
+/* About Page */
+.bim{
+    padding: 20px;
+    background: black ;
+}
+.md h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    color: aliceblue;
+}
+.rk .row{
+    display: flex;
+    margin-top: 0px;
+    background: black;
+   
+}
+.rk .col{
+    margin-top: 0px;
+    flex-basis: 50%;
+}
+.rk .col img{
+    border-radius: 90px;
+    margin-left: 145px;
+}
+.rk .col h1{
+    text-align: center;
+    color: rgb(233, 213, 213);
+    margin-top: 0px;
+    margin-right: 45px;
+    font-size: 50px;
+}
+.rk .col p{
+    color: rgb(124, 117, 117);
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin-right: 40px;
+}
+.rk h4{
+    color: white;
+    font-size: 30px;
+    margin-top: 18px;
+    text-align: center;
+    margin-left: 100px;
+
+}
+.rk h3{
+    margin-right: 40px;
+    color: orangered;
+    text-align: center;
+    margin-top: 55px;
+}
+
+/* HELP DESK */
+.support .row{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    background: white;
+}
+.support {
+    margin-top: 50px;
+}
+.support i{
+    margin-top: 45px;
+    color: black;
+}
+.support h4{
+    color: black;
+    font-size: 20px;
+}
+.support h3{
+    color: orangered;
+    font-size: 60px;
+    font-weight: bold;
+}
+.support-main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 60px;
+    background: wheat;
+    padding: 20px;
+    
+}
+.support-main p a{
+    font-size: 18px;
+    margin: 20px;
+    text-decoration: none;
+    color: #707070;
+}
+.support-main p a:hover{
+    color: orangered;
+}
+.support-main i{
+    margin-left: 40px;
+    color: orange;
+}
+.support-main img{
+    color: orangered;
+}
+.returns img{
+    margin-left: 20px;
+}
+.cancel img{
+    margin-left: 70px;
+}
+.refunds img{
+    margin-left: 25px;
+}
+.place{
+    margin-right: 20px;
+}
+.track{
+    margin-right: 20px;
+}
+.cancel{
+    margin-right: 20px;
+}
+.returns{
+    margin-right: 20px;
+}
+.refunds{
+    margin-right: 30px;
+}
+.payment{
+    margin-right: 20px;
+}
+
+/* Clothline1 */
+.line1 .row{
+    background: white;
+}
+.line1 .row .col{
+    margin-top: 5px;
+}
+.line1 .row{
+    background: whitesmoke;
+}
+.line1 p{
+    color: black;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.line1 h1{
+    color: black;
+    margin-top: 10px;
+}
+select{
+    color: black;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: orangered;
+    font-size: 15px;
+}
+.line1 img{
+    margin-top: 40px;
+    margin-left: 125px;
+    border-radius: 30%;
+}
+.cart{
+    display: flex;
+}
+.cart .line button{
+    width: 200px;
+}
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width:900px){
+
+    /* Plushhomepage */
+    .menu{
+        display: block;
+    }
+    #show-menu{
+        overflow: hidden;
+    }
+    .logo img{
+        width: 80px;
+    }
+  
+    nav{
+       
+        position: relative;
+        top: 4px;
+        z-index: 100;
+    }
+    nav a li{
+        display: block;
+        font-size: 23px;
+        
+        
+    }
+    
+    .main img{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .header{
+        width: 100%;
+        overflow: hidden;
+       
+    }
+    
+    
+    .main h1{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    .main h2{
+        font-size: 30px;
+    }
+    .main h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .main button{
+        width: 180px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .main .row{
+        flex-direction: column-reverse;
+    }
+    .container .row::after{
+        content: "";
+        width: 10px;
+        height: 30%;
+        position: absolute;
+        background: yellow;
+        left: 30px;
+        top: 290px;
+        margin-right: 20px;
+        /* z-index: -1; */
+        /* position: sticky; */
+        
+    }
+    .mid .row{
+        flex-direction: column;
+    }
+    .mid .row .col{
+        margin-left: 60px;
+    }
+    .mid h1::after{
+        content: "";
+        height: 6px;
+        width: 110px;
+        position: absolute;
+        background: orangered;
+        /* left: 80px; */
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-left: 44%;
+    
+    }
+    .flash .row{
+        flex-direction: column-reverse;
+    }
+    .footer .row{
+        flex-direction: column;
+    }
+    .push{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 150px;
+    }
+    .flash img{
+       width: 470px;
+       margin-left: 36px;
+       margin-bottom: 0px;
+    }
+    .flash h2{
+        margin-top: 0px;
+    }
+    .mid .cap{
+        width: 10px;
+    }
+    .social{
+        text-align: center;
+    }
+    .flash .row .col h3::after{
+        content: "";
+        width: 130px;
+        height: 3px;
+        background: black;
+        position: absolute;
+        margin-top: -19px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 190px;
+        /* align-content: center; */
+    
+    }
+    .flash .after h1::after{
+        content: "";
+        background: teal;
+        width: 120px;
+        height: 7px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 40%;
+    }
+  
+
+    /* product page */
+ 
+    .header{
+        height: 120px;
+    }
+    .header .logo img{
+        width: 120px;
+    }
+    .header .menu{
+       margin-right: 20px;
+    }
+    .header p{
+        margin-left: 10px;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .products .welcome .row{
+        flex-direction: column-reverse;
+    }
+    .products img{
+        margin-left: 45px;
+    }
+    .products h1{
+        font-size: 80px;
+        margin-top: 50px;
+    }
+    .products p{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .welcome .row::after{
+        content: "";
+        width: 10px;
+        height: 18%;
+        position: absolute;
+        background: orangered;
+        left: 55px;
+        top:790px;
+        margin-right: 20px;
+    }
+    .cloth .row{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    } 
+    .cloth .row .col{
+        justify-content: center;
+        align-content: center;
+        margin-left: 130px;
+    }
+    .cloth p{
+        font-size: 30px;
+    }
+    .cloth h1::after{
+        content: "";
+        height: 8px;
+        width: 120px;
+        background: orangered;
+        position: absolute;
+        display: flex;
+        margin-left: 40%;
+    }
+    .bags .row{
+        flex-direction: column-reverse;
+    }  
+    .bags .row .col{
+        justify-content: center;
+        align-content: center;
+        margin-left: 130px;
+    }
+    .bags h1::after{
+        content: "";
+        height: 8px;
+        width: 120px;
+        background: orangered;
+        position: absolute;
+        display: flex;
+        margin-left: 40%;
+    }
+    .bags p{
+        font-size: 30px;
+    }
+    .footer .push{
+        margin-right: 240px;
+    }
+
+    /* Plushstyles */
+
+    .rk .row{
+        flex-direction: column;
+        display: flex;
+    }
+    .rk .col img {
+        margin-left: 40px;
+    }
+    .rk h4{
+        margin-left: 0px;
+    }
+
+    /* About Page */
+    .support .row{
+        flex-direction: column-reverse;
+    }
+    .support{
+        margin-right: 30px;
+    }
+    .support h4{
+        font-size: 30px;
+    }
+    .support-main{
+        display: block;
+        margin-top: 20px;
+    }
+    .support-main p a:hover{
+        color: orange;
+    }
+    .returns img{
+        margin-left: 20px;
+        width: 100px;
+    }
+    .cancel img{
+        margin-left: 30px;
+        width: 100px;
+    }
+    .refunds img{
+        margin-left: 25px;
+        width: 100px;
+    }
+    .track img{
+        width: 100px;
+    }
+    .place i{
+        width: 180px;
+    }
+    .place{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .place{
+        margin-right: 20px;
+    }
+    .place p a{
+        font-size: 30px;
+    }
+    .track{
+        margin-right: 20px;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .track p a{
+        font-size: 30px;
+    }
+    .cancel{
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+    .cancel p a{
+        font-size: 30px;
+    }
+    .returns{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .returns p a{
+        font-size: 30px;
+    }
+    .refunds{
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    .refunds p a{
+        font-size: 30px;
+    }
+    .payment{
+        margin-right: 20px;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .payment p a{
+        font-size: 30px;
+    }
+  
+    /* Clothline6 */
+
+    .line1 .row{
+        flex-direction: column-reverse;
+    }
+    .line1 .col img{
+        margin-left: 23px;
+    }
+    .line1 p{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    select{
+        color: black;
+        width: 180px;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: orangered;
+        font-size: 30px;
+    }
+    .cart .line button{
+        width: 200px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .cart option{
+        font-size: 30px;
+        width: 50px;
+    }
+}
