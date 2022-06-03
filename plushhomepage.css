@@ -629,10 +629,8 @@ select{
     nav a li{
         display: block;
         font-size: 23px;
-        
-        
     }
-    
+
     .main img{
         width: 100%;
         margin-top: 80px;
@@ -642,7 +640,6 @@ select{
         overflow: hidden;
        
     }
-    
     
     .main h1{
         font-size: 40px;
@@ -962,3 +959,395 @@ select{
         width: 50px;
     }
 }
+
+@media screen and (max-width:424px) {
+      /* Plushhomepage */
+      .menu{
+        display: block;
+    }
+    #show-menu{
+        overflow: hidden;
+    }
+    .logo img{
+        width: 40px;
+    }
+    nav{
+        position: relative;
+        top: 4px;
+        z-index: 2;
+      
+    }
+    nav a li{
+        display: block;
+        font-size: 20px;
+    }
+
+    .main img{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .header{
+        width: 100%;
+        overflow: hidden;
+        height: 120px;
+    }
+    
+    .main h1{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    .main h2{
+        font-size: 30px;
+    }
+    .main h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .main button{
+        width: 180px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .main .row{
+        flex-direction: column-reverse;
+    }
+    .container .row::after{
+        content: "";
+        width: 10px;
+        height: 30%;
+        position: absolute;
+        background: yellow;
+        left: 30px;
+        top: 290px;
+        margin-right: 20px;
+        /* z-index: -1; */
+        /* position: sticky; */
+        
+    }
+    .mid img{
+        width: 90%;
+    }
+    .mid .row{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+  
+    .mid .row .col{
+        padding: 0px;
+        margin-left: 10px;
+    }
+    .mid h1::after{
+        content: "";
+        height: 6px;
+        width: 110px;
+        position: absolute;
+        background: orangered;
+        /* left: 80px; */
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-left: 39%;
+    
+    }
+    .flash .row{
+        flex-direction: column-reverse;
+    }
+    .footer .row{
+        flex-direction: column;
+    }
+    .push{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 203px;
+    }
+    .flash img{
+       width: 360px;
+       margin-left: 0px;
+       margin-bottom: 0px;
+    }
+    .flash .col h2{
+        margin-left: 0px;
+    }
+    .mid .cap{
+        width: 10px;
+    }
+    .social{
+        text-align: center;
+    }
+    .flash .row .col h3::after{
+        content: "";
+        width: 130px;
+        height: 3px;
+        background: black;
+        position: absolute;
+        margin-top: -19px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 105px;
+        /* align-content: center; */
+    
+    }
+    .flash .after h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .flash .after h1::after{
+        content: "";
+        background: teal;
+        width: 120px;
+        height: 7px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 36%;
+    }
+    .flash .row .col h1{
+        margin-left: 0px;
+    }
+
+        /* product page */
+        .header{
+            height: 120px;
+        }
+        .header .logo img{
+            width: 100px;
+        }
+        .header .menu{
+           margin-right: 20px;
+        }
+        .header p{
+            margin-left: 0px;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .products .welcome .row{
+            flex-direction: column-reverse;
+        }
+        .products img{
+            margin-left: 0px;
+        }
+        .products h1{
+            font-size: 65px;
+            margin-top: 40px;
+        }
+        .products h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .products p{
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .welcome .row::after{
+            content: "";
+            width: 10px;
+            height: 18%;
+            position: absolute;
+            background: orangered;
+            left: 55px;
+            top:790px;
+            margin-right: 20px;
+        }
+        .cloth .row{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        } 
+        .cloth .row .col{
+            justify-content: center;
+            align-content: center;
+            margin-left: 60px;
+        }
+        .cloth p{
+            font-size: 30px;
+        }
+        .cloth h1::after{
+            content: "";
+            height: 8px;
+            width: 120px;
+            background: orangered;
+            position: absolute;
+            display: flex;
+            margin-left: 40%;
+        }
+        .bags .row{
+            flex-direction: column-reverse;
+        }  
+        .bags .row .col{
+            justify-content: center;
+            align-content: center;
+            margin-left: 60px;
+        }
+        .bags h1::after{
+            content: "";
+            height: 8px;
+            width: 120px;
+            background: orangered;
+            position: absolute;
+            display: flex;
+            margin-left: 40%;
+        }
+        .bags p{
+            font-size: 30px;
+        }
+        .footer .push{
+            margin-right: 240px;
+        }
+
+        /* Plushstyles */
+
+    .rk .row{
+        flex-direction: column;
+        display: flex;
+    }
+    .rk .col img {
+        margin-left: 10px;
+        width: 320px;
+    }
+    .rk h4{
+        margin-left: 0px;
+    }
+    .rk p{
+        margin-left: 28px;
+    }
+
+    /* About Page */
+    .support .row{
+        flex-direction: column-reverse;
+    }
+    .menu img{
+        margin-right: 8px;
+    }
+    .support{
+        margin-right: 30px;
+    }
+    .support h4{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .support .col{
+        font-size: 20px;
+    }
+    .support img{
+        width: 380px;
+    }
+    .support h3{
+        font-size: 45px;
+        margin-left: 20px;
+    }
+    .support-main{
+        display: block;
+        margin-top: 20px;
+    }
+    .support-main p a:hover{
+        color: orange;
+    }
+    .returns img{
+        margin-left: 20px;
+        width: 100px;
+    }
+    .cancel img{
+        margin-left: 30px;
+        width: 100px;
+    }
+    .refunds img{
+        margin-left: 25px;
+        width: 100px;
+    }
+    .track img{
+        width: 100px;
+    }
+    .place i{
+        width: 180px;
+    }
+    .place{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .place{
+        margin-right: 20px;
+    }
+    .place p a{
+        font-size: 30px;
+    }
+    .track{
+        margin-right: 20px;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .track p a{
+        font-size: 30px;
+    }
+    .cancel{
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+    .cancel p a{
+        font-size: 30px;
+    }
+    .returns{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .returns p a{
+        font-size: 30px;
+    }
+    .refunds{
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    .refunds p a{
+        font-size: 30px;
+    }
+    .payment{
+        margin-right: 20px;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .payment p a{
+        font-size: 30px;
+    }
+  
+    /* Clothline6 */
+
+    .line1 .row{
+        flex-direction: column-reverse;
+    }
+    .line1 .col img{
+        margin-left: 23px;
+        width: 320px;
+    }
+    .cart{
+        display: block;
+    }
+    .line1 p{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    select{
+        color: black;
+        width: 190px;
+        margin-left: 40px;
+        margin-top: 30px;
+        color: orangered;
+        font-size: 32px;
+    }
+    .cart .line button{
+        width: 200px;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+    .cart option{
+        font-size: 30px;
+        width: 50px;
+    }
+}
+
+
